@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:lusffs/advent-of-code-2017.git",
   "author": "Conrad Ohlsson <LusFFS@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
 }
