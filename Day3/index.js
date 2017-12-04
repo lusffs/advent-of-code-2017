@@ -56,9 +56,3 @@ function Part1(input) {
 }
 
 module.exports = { Part1 };
-
-/*
-for (var i = 1; i < 199; i = i + 2) {
-  console.log(i);
-}
-*/
