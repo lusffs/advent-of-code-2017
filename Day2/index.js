@@ -16,9 +16,7 @@ function Step2(rows) {
     values = rows[i]
       .split("\t")
       .map(Number)
-      .sort(function(a, b) {
-        return b - a;
-      });
+      .sort((a, b) => b - a);
 
     var dividedValue = 0;
 
