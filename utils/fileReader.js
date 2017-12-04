@@ -1,5 +1,5 @@
 var fs = require("fs");
-
+/*
 function readLines(filePath) {
   var lineReader = require("line-reader");
   var lines = [];
@@ -19,7 +19,7 @@ function readLines(filePath) {
   console.log("lines: ", lines);
 }
 
-readLines("./Day2/input.txt");
+readLines("./Day2/input.txt");*/
 /*
 var input = "";
 

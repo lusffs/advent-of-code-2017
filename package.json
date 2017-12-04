@@ -5,7 +5,7 @@
   "repository": "git@github.com:lusffs/advent-of-code-2017.git",
   "author": "Conrad Ohlsson <LusFFS@gmail.com>",
   "license": "MIT",
-  "scripts": { "test": "mocha" },
+  "scripts": { "test": "mocha --recursive" },
   "dependencies": {
     "chai": "^4.1.2",
     "fs": "^0.0.1-security",
