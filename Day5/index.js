@@ -3,6 +3,10 @@ var inputFile = fs
   .readFileSync("./Day5/input.txt", "utf8")
   .split("\n")
   .map(Number);
+var inputFile2 = fs
+  .readFileSync("./Day5/input.txt", "utf8")
+  .split("\n")
+  .map(Number);
 
 function Part1(input) {
   var outsideMaze = false;
@@ -54,6 +58,6 @@ function Part2(input) {
 
 module.exports = { Part1, Part2 };
 
-//Function mutates the inputFile vaiable between the two Steps ;) Don't run them in succession
-//console.log("Step1: ", Part1(inputFile)); // 318883
-//console.log("Step2: ", Part2(inputFile)); // 23948711
+//Function mutates the inputFile vaiable between the two Steps ;) Don't run them in succession with the same input, cause JavaScript ;)
+console.log("Step1: ", Part1(inputFile)); // 318883
+console.log("Step2: ", Part2(inputFile2)); // 23948711
