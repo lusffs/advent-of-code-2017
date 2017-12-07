@@ -59,5 +59,5 @@ function Part2(input) {
 module.exports = { Part1, Part2 };
 
 //Function mutates the inputFile vaiable between the two Steps ;) Don't run them in succession with the same input, cause JavaScript ;)
-console.log("Step1: ", Part1(inputFile)); // 318883
-console.log("Step2: ", Part2(inputFile2)); // 23948711
+//console.log("Step1: ", Part1(inputFile)); // 318883
+//console.log("Step2: ", Part2(inputFile2)); // 23948711

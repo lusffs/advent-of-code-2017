@@ -36,5 +36,5 @@ function Part2(input) {
 
 module.exports = { Part1, Part2 };
 
-console.log("Day1.Part1: ", Part1(input)); //1047
-console.log("Day1.Part2: ", Part2(input)); //982
+//console.log("Day1.Part1: ", Part1(input)); //1047
+//console.log("Day1.Part2: ", Part2(input)); //982

@@ -32,5 +32,5 @@ function Step2(rows) {
   }
   return sum;
 }
-console.log("Part 1: ", Step1(rows)); // 45972
-console.log("Part 2: ", Step2(rows)); // 326
+//console.log("Part 1: ", Step1(rows)); // 45972
+//console.log("Part 2: ", Step2(rows)); // 326

@@ -36,6 +36,6 @@ function Part1(input) {
   return stepsToNearestCenterPoint + Math.floor(boxSize / 2); //sqrt - 1;
 }
 
-console.log(Part1(input)); //475
+//console.log(Part1(input)); //475
 
 module.exports = { Part1 };

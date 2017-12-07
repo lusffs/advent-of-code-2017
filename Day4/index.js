@@ -60,5 +60,5 @@ function Step2(input) {
   return correct_phrases;
 }
 
-console.log("Step 1: ", Step1(input_rows)); //325
-console.log("Step 2: ", Step2(input_rows)); //119
+//console.log("Step 1: ", Step1(input_rows)); //325
+//console.log("Step 2: ", Step2(input_rows)); //119

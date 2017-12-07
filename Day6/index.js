@@ -46,10 +46,44 @@ function Part1(input) {
 }
 
 function Part2(input) {
-  return "No answer...";
+  var memoryBanks = input;
+  var previousValues = [];
+  var foundAPreviousValue = false;
+  var cycles = 0;
+  var hasBeenSeenBefore = false;
+
+  while (true) {
+    var memoryIndex = getAccessIndex(memoryBanks);
+
+    var value = memoryBanks[memoryIndex];
+    memoryBanks[memoryIndex] = 0;
+
+    for (var i = 0; i < value; i++) {
+      var takeIndex = i + memoryIndex + 1;
+
+      if (takeIndex >= memoryBanks.length) {
+        takeIndex = takeIndex - memoryBanks.length;
+      }
+      memoryBanks[takeIndex]++;
+    }
+
+    var currentMemorySetup = input.join();
+    cycles++;
+    if (previousValues.indexOf(currentMemorySetup) !== -1) {
+      if (hasBeenSeenBefore) {
+        break;
+      }
+      hasBeenSeenBefore = true;
+      previousValues = [];
+      cycles = 0;
+    }
+    previousValues.push(currentMemorySetup);
+  }
+
+  return cycles;
 }
 
 module.exports = { Part1, Part2 };
 
 //console.log("Step 1: ", Part1(inputFile)); //14029
-console.log("Step 2: ", Part2(inputFile2));
+//console.log("Step 2: ", Part2(inputFile2)); //2765
